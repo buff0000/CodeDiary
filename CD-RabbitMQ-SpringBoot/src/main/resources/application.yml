@@ -21,9 +21,16 @@ spring:
       port: 20190
       username: admin
       password: admin
-      virtual-host: /buff_vhost
+      virtual-host: buff_vhost
+      template:
+            # 使用return-callback时必须设置mandatory为true
+        mandatory: true
+          # 消息发送到交换机确认机制,是否确认回调
+      publisher-confirms: true
+          # 消息发送到交换机确认机制，是否返回回调
+      publisher-returns: true
       listener:
         simple:
-          #acknowledge-mode: manual #设置确认模式手工确认
+          acknowledge-mode: manual #设置确认模式手工确认
           concurrency: 3 #消费者最小数量
           max-concurrency: 10 # 消费者最大数量
