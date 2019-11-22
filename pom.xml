@@ -9,9 +9,10 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>CD-RabbitMQ</module>
         <module>CD-RabbitMQ-SpringBoot</module>
         <module>CD-RabbitMQ-JavaClient</module>
+        <module>Java-NIO</module>
+        <module>CD-Java-NIO</module>
     </modules>
 
     <parent>

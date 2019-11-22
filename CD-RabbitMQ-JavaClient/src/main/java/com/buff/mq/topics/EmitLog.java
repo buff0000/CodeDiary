@@ -1,7 +1,6 @@
 package com.buff.mq.topics;
 
 import com.buff.mq.ConstantMQInfo;
-import com.buff.mq.routing.NoticeMessage;
 import com.buff.mq.util.ConnectionUtil;
 import com.rabbitmq.client.BuiltinExchangeType;
 import com.rabbitmq.client.Channel;
